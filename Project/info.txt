@@ -1,0 +1,119 @@
+#############################################################
+Datasets infos from the originals datasets description on UCI
+#############################################################
+
+DATASET 1: CAR EVALUATION_______________________________________________________________________________________________
+
+1. Relevant Information Paragraph:
+
+   Car Evaluation Database was derived from a simple hierarchical
+   decision model originally developed for the demonstration of DEX
+   (M. Bohanec, V. Rajkovic: Expert system for decision
+   making. Sistemica 1(1), pp. 145-157, 1990.). The model evaluates
+   cars according to the following concept structure:
+
+   CAR                      car acceptability
+   . PRICE                  overall price
+   . . buying               buying price
+   . . maint                price of the maintenance
+   . TECH                   technical characteristics
+   . . COMFORT              comfort
+   . . . doors              number of doors
+   . . . persons            capacity in terms of persons to carry
+   . . . lug_boot           the size of luggage boot
+   . . safety               estimated safety of the car
+
+2. Number of Instances: 1728
+   (instances completely cover the attribute space)
+
+3. Number of Attributes: 6
+
+4. Attribute Values:
+
+   buying       v-high, high, med, low
+   maint        v-high, high, med, low
+   doors        2, 3, 4, 5-more
+   persons      2, 4, more
+   lug_boot     small, med, big
+   safety       low, med, high
+
+5. Missing Attribute Values: none
+
+6. Class Distribution (number of instances per class)
+
+   class      N          N[%]
+   -----------------------------
+   unacc     1210     (70.023 %) 
+   acc        384     (22.222 %) 
+   good        69     ( 3.993 %) 
+   v-good      65     ( 3.762 %) 
+
+DATASET 2: BALANCE-SCALE________________________________________________________________________________________________
+
+1. Relevant Information: 
+	This data set was generated to model psychological
+	experimental results.  Each example is classified as having the
+	balance scale tip to the right, tip to the left, or be
+	balanced.  The attributes are the left weight, the left
+	distance, the right weight, and the right distance.  The
+	correct way to find the class is the greater of 
+	(left-distance * left-weight) and (right-distance *
+	right-weight).  If they are equal, it is balanced.
+
+2. Number of Instances: 625 (49 balanced, 288 left, 288 right)
+
+3. Number of Attributes: 4 (numeric) + class name = 5
+
+4. Attribute Information:
+	1. Class Name: 3 (L, B, R)
+	2. Left-Weight: 5 (1, 2, 3, 4, 5)
+	3. Left-Distance: 5 (1, 2, 3, 4, 5)
+	4. Right-Weight: 5 (1, 2, 3, 4, 5)
+	5. Right-Distance: 5 (1, 2, 3, 4, 5)
+
+5. Missing Attribute Values: 
+	none
+
+6. Class Distribution: 
+   1. 46.08 percent are L
+   2. 07.84 percent are B
+   3. 46.08 percent are R
+
+DATASET 3: NURSERY______________________________________________________________________________________________________
+
+1. Relevant Information Paragraph:
+
+   Nursery Database was derived from a hierarchical decision model
+   originally developed to rank applications for nursery schools. It
+   was used during several years in 1980's when there was excessive
+   enrollment to these schools in Ljubljana, Slovenia, and the
+   rejected applications frequently needed an objective
+   explanation.
+
+2. Number of Instances: 12960
+   (instances completely cover the attribute space)
+
+3. Number of Attributes: 8
+
+4. Attribute Values:
+
+   parents        usual, pretentious, great_pret
+   has_nurs       proper, less_proper, improper, critical, very_crit
+   form           complete, completed, incomplete, foster
+   children       1, 2, 3, more
+   housing        convenient, less_conv, critical
+   finance        convenient, inconv
+   social         non-prob, slightly_prob, problematic
+   health         recommended, priority, not_recom
+
+5. Missing Attribute Values: none
+
+6. Class Distribution (number of instances per class)
+
+   class        N         N[%]
+   ------------------------------
+   not_recom    4320   (33.333 %)
+   recommend       2   ( 0.015 %)
+   very_recom    328   ( 2.531 %)
+   priority     4266   (32.917 %)
+   spec_prior   4044   (31.204 %)
