@@ -102,3 +102,4 @@ def create_dataset(file, attrnames, target, values):
     inputs = set_inputs(attributes, target)
 
     return DataSet(file, examples, inputs, attributes, target, attrnames, values)
+

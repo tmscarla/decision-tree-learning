@@ -61,5 +61,34 @@ n_values = {0: ['usual', 'pretentious', 'great_pret'],
 
 # test_and_plot('nursery.txt', n_names, 8, n_values, 1000)
 
-# n_tree, n_nodes = decision_tree_learner(create_dataset('nursery.txt', n_names, 8, n_values))
-# n_tree.display()
+#n_tree, n_nodes = decision_tree_learner(create_dataset('nursery.txt', n_names, 8, n_values))
+#n_tree.display()
+
+# DataSet 4: IRIS____________________________________________________________________________________________________
+
+print("\n")
+
+iris_names = {0: 'sepal-len', 1: 'sepal-width', 2: 'petal-len', 3: 'petal-width', 4: 'class'}
+iris_values = {4: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']}
+
+iris_dataset = create_dataset('iris.txt', iris_names, 4, iris_values)
+
+iris_tree, n_nodes = decision_tree_learner(iris_dataset, m=0, continuos=True)
+iris_tree.display()
+
+print("\n\n")
+
+print(len(iris_dataset.examples))
+
+sum = 0
+for e in iris_dataset.examples:
+    if e[4] == iris_tree(e):
+
+        #print("EXAMPLE:", e)
+        #print("CLASS:", iris_tree(e))
+        sum += 1
+    print("EXAMPLE:", e)
+    print("CLASS:", iris_tree(e))
+print(sum)
+
+
